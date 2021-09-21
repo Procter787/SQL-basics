@@ -1,0 +1,14 @@
+SELECT * FROM employee
+WHERE city = 'Calgary';
+
+SELECT * FROM employee
+ORDER BY birth_date DESC limit 1;
+
+SELECT * FROM employee
+ORDER BY birth_date ASC limit 1;
+
+SELECT * FROM employee 
+WHERE reportsTo = 'Nancy Edwards';
+
+SELECT SUM (city) FROM employee WHERE city = lethbridge;
+ 

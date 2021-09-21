@@ -1,0 +1,32 @@
+CREATE TABLE person (
+    persons_id SERIAL PRIMARY KEY,
+    F_name VARCHAR(50),
+    persons_age NUMERIC,
+    persons_height NUMERIC,
+    fav_color VARCHAR(50)
+);
+
+INSERT INTO person (F_name, persons_age, persons_height, fav_color)
+VALUES ('Porter', 21, 6.2, 'purple'),
+    ('John', 58, 5.11, 'green'),
+    ('Ricardo', 12, 4.8, 'yellow'),
+    ('Sally', 94, 4.11, 'black'),
+    ('Sam', 42, 5.8, 'blue'),
+    ('Lily', 24, 5.9, 'green');
+
+SELECT persons_height FROM person;
+
+--SELECT persons_height * FROM person
+--ORDER BY persons_height DESC;
+
+-- SELECT persons_age * FROM person
+-- ORDER BY persons_age DESC;
+
+-- SELECT * FROM person WHERE persons_age > 20;
+
+-- SELECT * FROM person WHERE persons_age = 18;
+
+-- SELECT * FROM person WHERE persons_age < 20;
+-- SELECT * FROM person WHERE persons_age > 30;
+
+-- SELECT * FROM person WHERE persons_age != 27;

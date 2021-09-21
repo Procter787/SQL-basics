@@ -1,0 +1,23 @@
+CREATE TABLE orders(
+    order_id SERIAL PRIMARY KEY
+    persons_id NUMERIC
+    product_name VARCHAR(50)
+    product_price NUMERIC
+    quantity NUMERIC
+)
+
+INSERT INTO orders (order_id, persons_id, product_name, product_price, quantity)
+VALUES (1, 'hotdog', 3.00, 1),
+    (2, 'corndog', 2.50, 2),
+    (3, 'hamburger', 4.36, 1),
+    (4, 'pizza', 2.34, 1),
+    (5, 'churro', 1.00, 1);
+
+SELECT * FROM orders;
+
+SELECT SUM(quantity) FROM orders;
+
+SELECT SUM(product_price) FROM orders;
+
+SELECT SUM(product_price) FROM orders WHERE persons_id = 1;
+
